@@ -222,5 +222,45 @@
     {
         "word": "puzzle",
         "hint": "A game, toy, or problem designed to test ingenuity or knowledge."
+    },
+    {
+    "word": "guitar",
+    "hint": "Musical instrument with strings"
+    },
+    {
+    "word": "telescope",
+    "hint": "Device for distant observation"
+    },
+    {
+    "word": "bicycle",
+    "hint": "Two-wheeled pedal vehicle"
+    },
+    {
+    "word": "umbrella",
+    "hint": "Rain protection device"
+    },
+    {
+    "word": "book",
+    "hint": "Written or printed work"
+    },
+    {
+    "word": "painting",
+    "hint": "Artistic creation on canvas"
+    },
+    {
+    "word": "recipe",
+    "hint": "Set of cooking instructions"
+    },
+    {
+    "word": "hammer",
+    "hint": "Tool for driving nails"
+    },
+    {
+    "word": "doctor",
+    "hint": "Medical professional"
+    },
+    {
+    "word": "computer",
+    "hint": "Electronic device for processing data"
     }
 ]
