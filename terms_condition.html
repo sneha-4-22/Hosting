@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terms and Conditions</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        var markdownText = `
+# Terms and Conditions
+
+Please read and agree to the following terms and conditions:
+
+1. You must use the Service responsibly and in compliance with all applicable laws and regulations.
+2. You are solely responsible for the content and queries you submit through the Service.
+3. You shall not use the Service for any malicious, abusive, or harmful purposes.
+4. SQLify AI strives to provide accurate translations, but we do not guarantee the accuracy or completeness of the results.
+By using our services, you agree to abide by these terms.
+5. You shouldn't be liable for any direct or indirect damages, including but not limited to loss of data or profits, arising from the use of the Service.
+6. We reserve the right to terminate or suspend your access to the Service at our discretion, with or without cause.
+7. You may not reproduce, distribute, or modify any part of the Service without our explicit written consent.
+😊
+        `;
+        document.getElementById('content').innerHTML = marked(markdownText);
+    </script>
+</body>
+</html>
