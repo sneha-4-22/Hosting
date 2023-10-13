@@ -262,5 +262,85 @@
     {
     "word": "computer",
     "hint": "Electronic device for processing data"
-    }
+    },
+    {
+        "word": "house",
+        "hint": "Residential building"
+    },
+    {
+        "word": "camera",
+        "hint": "Device for taking photos"
+    },
+    {
+        "word": "garden",
+        "hint": "Outdoor space for plants"
+    },
+    {
+        "word": "police",
+        "hint": "Law enforcement agency"
+    },
+    {
+        "word": "music",
+        "hint": "Art form with sound"
+    },
+    {
+        "word": "pizza",
+        "hint": "Italian dish with toppings"
+    },
+    {
+        "word": "firefighter",
+        "hint": "First responder to fires"
+    },
+    {
+        "word": "flower",
+        "hint": "Colorful plant in gardens"
+    },
+    {
+        "word": "wallet",
+        "hint": "Carries money and cards"
+    },
+    {
+        "word": "movie",
+        "hint": "Entertainment on a screen"
+    },
+    {
+        "word": "pencil",
+        "hint": "Writing and drawing tool"
+    },
+    {
+        "word": "dog",
+        "hint": "Loyal, domestic animal"
+    },
+    {
+        "word": "astronaut",
+        "hint": "Space explorer"
+    },
+    {
+        "word": "coffee",
+        "hint": "Caffeinated beverage"
+    },
+    {
+        "word": "sunset",
+        "hint": "Evening sky view"
+    },
+    {
+        "word": "library",
+        "hint": "Place for books"
+    },
+    {
+        "word": "butterfly",
+        "hint": "Colorful insect with wings"
+    },
+    {
+        "word": "shoes",
+        "hint": "Footwear for walking"
+    },
+    {
+        "word": "beach",
+        "hint": "Sandy coastal area"
+    },
+    {
+        "word": "painting",
+        "hint": "Artwork on canvas"
+    },
 ]
