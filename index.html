@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <title>Terms and Conditions</title>
@@ -23,6 +23,146 @@ By using our services, you agree to abide by these terms.
 😊
         `;
         document.getElementById('content').innerHTML = marked(markdownText);
+    </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .box {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .copy-button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a{
+        	color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Words API</h1>
+        <p>A simple API for word definitions.</p>
+        <div class="box">
+            <p>End Point Of Words Api</p>
+            <a><p id="textToCopy">raw.githubusercontent.com/prasad-chavan1/words.api/main/words.json</p></a>
+            <button class="copy-button" id="copyButton">Copy Text</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody id="wordTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Sample JSON data
+       /*** const wordData = [
+            {
+                "word": "pocket",
+                "hint": "A bag for carrying small things"
+            },
+            {
+                "word": "needle",
+                "hint": "A thin & sharp metal pin"
+            }
+        ];
+
+        const wordTable = document.getElementById("wordTable");
+
+        // Loop through the JSON data and populate the table
+        wordData.forEach(word => {
+            const row = wordTable.insertRow();
+            const wordCell = row.insertCell(0);
+            const meaningCell = row.insertCell(1);
+            wordCell.innerText = word.word;
+            meaningCell.innerText = word.hint;
+        });**/
+        function fetchJSONData() {
+            fetch('https://raw.githubusercontent.com/prasad-chavan1/words.api/main/words.json').then(response => response.json()).then(data => {
+                    // Loop through the fetched JSON data and populate the table
+                    data.forEach(word => {
+                        const row = wordTable.insertRow();
+                        const wordCell = row.insertCell(0);
+                        const meaningCell = row.insertCell(1);
+                        wordCell.innerText = word.word;
+                        meaningCell.innerText = word.hint;
+                    });
+                })
+                .catch(error => console.error('Error fetching JSON data:', error));
+        }
+
+        // Call the function to fetch and display JSON data
+        fetchJSONData();
+         const copyButton = document.getElementById("copyButton");
+        const textToCopy = document.getElementById("textToCopy");
+
+        copyButton.addEventListener("click", function () {
+            const text = textToCopy.textContent;
+
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+
+            alert("Text has been copied to the clipboard: " + text);
+        });
     </script>
 </body>
 </html>
