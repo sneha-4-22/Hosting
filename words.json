@@ -342,5 +342,37 @@
     {
         "word": "painting",
         "hint": "Artwork on canvas"
+    },
+    {
+        "word": "grape",
+        "hint": "A small, juicy fruit that can be green, red, or purple."
+    },
+    {
+        "word": "elephant",
+        "hint": "A large, gray mammal with a trunk and tusks."
+    },
+    {
+        "word": "mountain",
+        "hint": "A large natural elevation of the earth's surface."
+    },
+    {
+        "word": "ocean",
+        "hint": "A vast body of saltwater covering much of the Earth's surface."
+    },
+    {
+        "word": "grape",
+        "hint": "A small, juicy fruit that can be green, red, or purple."
+    },
+    {
+        "word": "elephant",
+        "hint": "A large, gray mammal with a trunk and tusks."
+    },
+    {
+        "word": "mountain",
+        "hint": "A large natural elevation of the earth's surface."
+    },
+    {
+        "word": "ocean",
+        "hint": "A vast body of saltwater covering much of the Earth's surface."
     }
 ]
